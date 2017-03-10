@@ -15,3 +15,5 @@ echo "<hr />";
 $xyz = $arr3['c'];
 echo $xyz;
 echo "<hr />";
+
+echo "test pull data";
