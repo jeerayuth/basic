@@ -13,8 +13,19 @@ use app\assets\AppAsset;
 AppAsset::register($this);
 */
 
+/*
 use app\assets\BasicAsset;
 BasicAsset::register($this);
+*/
+
+/*
+use app\assets\UnitedAsset;
+UnitedAsset::register($this);
+*/
+
+use app\assets\MaterialAsset;
+MaterialAsset::register($this);
+
 
 ?>
 <?php $this->beginPage() ?>
