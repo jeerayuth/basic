@@ -33,10 +33,13 @@ class FirstController extends \yii\web\Controller
         return $this->render('page3');
     }
     
-    public function actionPage4()
+    public function actionPage4(
+            $xname = null,
+            $yname = null
+    )
     {
-        $fname = 'จีระยุทธ';
-        $lname = 'ปิ่นสุวรรณ';
+        $fname = $xname;
+        $lname = $yname;
         $name = $fname.'  '.$lname;
         return $this->render('page4', [
             'name'=>$name,
