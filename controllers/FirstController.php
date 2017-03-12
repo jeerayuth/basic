@@ -32,5 +32,15 @@ class FirstController extends \yii\web\Controller
     {
         return $this->render('page3');
     }
+    
+    public function actionPage4()
+    {
+        $fname = 'จีระยุทธ';
+        $lname = 'ปิ่นสุวรรณ';
+        $name = $fname.'  '.$lname;
+        return $this->render('page4', [
+            'name'=>$name,
+        ]);
+    }
 
 }
