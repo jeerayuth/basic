@@ -1,5 +1,6 @@
 <?php
-/* @var $this yii\web\View */
+$this->title = 'First Menu';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 <h1>/first/index</h1>
 
