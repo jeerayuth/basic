@@ -23,6 +23,7 @@ use app\assets\UnitedAsset;
 UnitedAsset::register($this);
 */
 
+
 use app\assets\MaterialAsset;
 MaterialAsset::register($this);
 
@@ -47,7 +48,7 @@ MaterialAsset::register($this);
         'brandLabel' => 'My Company',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-warning navbar-fixed-top',
+            'class' => 'navbar-default navbar-fixed-top',
         ],
     ]);
     echo Nav::widget([
