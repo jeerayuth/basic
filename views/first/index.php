@@ -1,10 +1,19 @@
 <?php
 $this->title = 'First Menu';
 $this->params['breadcrumbs'][] = $this->title;
-?>
-<h1>/first/index</h1>
 
-<p>
-    You may change the content of this page by modifying
-    the file <code><?= __FILE__; ?></code>.
-</p>
+// copy มาจากตัวอย่าง page4
+// เพื่อทำระบบ Menu
+$link1 = Yii::$app->urlManager->createUrl([
+    'first/page1',
+]);
+
+?>
+
+
+
+<h1>/first/index</h1>
+<!-- ส่วนแสดงค่าเมนู -->
+<a href="<?= $link1; ?>">
+    1. การแสดงค่าจาก view
+</a>
